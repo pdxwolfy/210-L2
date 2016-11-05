@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <script>
+      "use strict";
+
+      function sum(numbers) {
+        var total = 0;
+        for (var index = 0; index < numbers.length; ++index) {
+          total += numbers[index];
+        }
+
+        return total;
+      }
+
+      function average(numbers) {
+        return sum(numbers) / numbers.length;
+      }
+
+      console.log(average([3, 5, 9]));
+      console.log(average([3, 5, 9, 2]));
+      console.log(average([3]));
+      console.log(average([3, 5, 9, 2, 6]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <script>
+      "use strict";
+
+      function sum(values) {
+        var total = 0;
+        for (var index = 0; index < values.length; ++index) {
+          total += values[index];
+        }
+
+        return total;
+      }
+
+      function average(values) {
+        return sum(values) / values.length;
+      }
+
+      var temperatures = [72, 83, 35, -40, 5];
+      console.log(average(temperatures));
+    </script>
+  </body>
+</html>
